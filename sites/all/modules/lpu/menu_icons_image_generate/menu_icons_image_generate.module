@@ -1,0 +1,44 @@
+<?php 
+
+function menu_icons_image_generate($mlid = null) {
+
+    if ($mlid === null) {
+      $result = db_query("SELECT mlid, options FROM {menu_links}");
+    }
+    else {
+      $result = db_query("SELECT mlid, options FROM {menu_links} where mlid=%d", $mlid);
+    }
+  $css = "";
+  $pos = variable_get('menu_icons_position', 'left');
+
+  foreach ($result as $item) {
+    $options = unserialize($item->options);
+
+    if (isset($options['menu_icon']) && $options['menu_icon']['enable'] && !empty($options['menu_icon']['path']) && file_exists($options['menu_icon']['path'])) {
+
+      $image_path = $options['menu_icon']['path'];
+      $image_style = (isset($options['menu_icon']['image_style']) && !empty($options['menu_icon']['image_style'])) ? $options['menu_icon']['image_style'] : NULL;
+
+      if ($image_style) {
+        $source_uri = $image_path;
+        $image_path = image_style_path($image_style, $source_uri);
+
+        if (!file_exists($image_path)) {
+          image_style_create_derivative(image_style_load($image_style), $source_uri, $image_path);
+        }
+      }
+
+      // Retrieve the image dimensions
+      $info = image_get_info($image_path);
+      $image_url = file_create_url($image_path);
+
+      // Support private filesystem
+      $css .= theme('menu_icons_css_item', array('mlid' => $item->mlid, 'path' => $image_url, 'size' => $info['width'], 'pos' => $pos));
+    }
+  }
+  if (!empty($css)) {
+    $csspath = 'public://css';
+    file_prepare_directory($csspath, FILE_CREATE_DIRECTORY);
+    file_unmanaged_save_data($css, $csspath . '/menu_icons.css', FILE_EXISTS_REPLACE);	
+  }
+}

@@ -1,0 +1,1 @@
+jqDrupal = jQuery.noConflict();

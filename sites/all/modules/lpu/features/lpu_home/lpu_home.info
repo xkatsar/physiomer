@@ -1,0 +1,11 @@
+name = Home
+description = bloc pour la home, affichage des nodes "promu" par ordre de leur lien de menu
+core = 7.x
+package = Features
+version = 7.x-1.0
+project = lpu_home
+dependencies[] = views
+dependencies[] = views_menu_sort
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[views_view][] = home

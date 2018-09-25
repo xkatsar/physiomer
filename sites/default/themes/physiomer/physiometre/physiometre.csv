@@ -1,0 +1,625 @@
+Tranche;value
+Bébé;1-0
+Enfant;2-0
+Adultes;3-0
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Âge / Sexe;value
+<1 mois;1-1
+1/24 mois;1-2
+2/6 ans;2-1
+6/10 ans;2-2
+> à 10 ans;2-3
+Homme;3-1
+Femme;3-2
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Symptômes (separator=" ; ")
+Nez qui coule;1
+Nez bouché;2
+Nez sec;3
+Nez qui picote;4
+Nez qui éternue;5
+
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Rhume
+1 à 2;1
+2 à 5;2
+> à 5;3
+
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Allergique
+oui;1-1
+non;1-2
+
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Enceinte
+oui;2-1
+non;2-2
+
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Produits;nid
+Eucalyptus;60
+Hypertonique;59
+Jet Normal;9
+Jet Fort;58
+Kids;57
+Vapo-douceur;11
+Mouche-bébé;56
+===============================================================================================================================================================================================================================================
+===============================================================================================================================================================================================================================================
+Tranche Age;Âge / Sexe;Symptômes;Rhume;Allergique;Enceinte;Produit n°1;Produit n°2
+Bébé;<1 mois;Nez qui coule ;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez bouché ;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez sec ;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui picote;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui éternue;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui picote ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui éternue ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui coule ;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez bouché ;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez sec ;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui picote;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui éternue;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui picote ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui éternue ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui coule ;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez bouché ;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez sec ;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui picote;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;Nez qui éternue;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui picote ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui éternue ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;<1 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui coule ;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez bouché ;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez sec ;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui picote;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui éternue;1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui picote ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui éternue ";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui coule ;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez bouché ;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez sec ;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui picote;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui éternue;2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui picote ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui éternue ";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui coule ;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez bouché ;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez sec ;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui picote;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;Nez qui éternue;> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui picote ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui éternue ";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Bébé;1/24 mois;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Vapo-douceur;Mouche-bébé 
+Enfant;2/6 ans;Nez qui coule ;1 à 2;;;Kids ;
+Enfant;2/6 ans;Nez bouché ;1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;Nez sec ;1 à 2;;;Kids ;
+Enfant;2/6 ans;Nez qui picote;1 à 2;;;Kids ;
+Enfant;2/6 ans;Nez qui éternue;1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ";1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui picote ";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez qui picote";1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez bouché ; Nez qui éternue ";1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez sec ; Nez qui picote";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez sec ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui picote ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui picote";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui picote";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";1 à 2;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";1 à 2;;;Kids ;
+Enfant;2/6 ans;Nez qui coule ;2 à 5;;;Kids ;
+Enfant;2/6 ans;Nez bouché ;2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;Nez sec ;2 à 5;;;Kids ;
+Enfant;2/6 ans;Nez qui picote;2 à 5;;;Kids ;
+Enfant;2/6 ans;Nez qui éternue;2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ";2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui picote ";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez qui picote";2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez bouché ; Nez qui éternue ";2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez sec ; Nez qui picote";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez sec ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui picote ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui picote";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui picote";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";2 à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";2 à 5;;;Kids ;
+Enfant;2/6 ans;Nez qui coule ;> à 5;;;Kids ;
+Enfant;2/6 ans;Nez bouché ;> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;Nez sec ;> à 5;;;Kids ;
+Enfant;2/6 ans;Nez qui picote;> à 5;;;Kids ;
+Enfant;2/6 ans;Nez qui éternue;> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ";> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui picote ";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez qui picote";> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez bouché ; Nez qui éternue ";> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez sec ; Nez qui picote";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez sec ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui picote ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui picote";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui picote";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";> à 5;;;Hypertonique ;Kids 
+Enfant;2/6 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;2/6 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";> à 5;;;Kids ;
+Enfant;6/10 ans;Nez qui coule ;;oui;;Jet Normal ;
+Enfant;6/10 ans;Nez bouché ;;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;Nez sec ;;oui;;Jet Normal;
+Enfant;6/10 ans;Nez qui picote;;oui;;Jet Normal;
+Enfant;6/10 ans;Nez qui éternue;;oui;;Jet Normal;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ";;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez qui picote ";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez qui picote";;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez bouché ; Nez qui éternue ";;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";;oui;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;6/10 ans;Nez qui coule ;;non;;Jet Normal ;
+Enfant;6/10 ans;Nez bouché ;;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;Nez sec ;;non;;Jet Normal;
+Enfant;6/10 ans;Nez qui picote;;non;;Jet Normal;
+Enfant;6/10 ans;Nez qui éternue;;non;;Jet Normal;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ";;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez qui picote ";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez qui picote";;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez bouché ; Nez qui éternue ";;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";;non;;Hypertonique ;Jet Normal 
+Enfant;6/10 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;6/10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;Nez qui coule ;;oui;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;Nez bouché ;;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;Nez sec ;;oui;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;Nez qui picote;;oui;;Jet Normal;
+Enfant;> à 10 ans;Nez qui éternue;;oui;;Jet Normal;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ";;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez qui picote ";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez qui éternue";;oui;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez bouché ; Nez sec";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez qui picote";;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;"Nez bouché ; Nez qui éternue ";;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;"Nez sec ; Nez qui picote";;oui;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";;oui;;Hypertonique ;Jet Normal 
+Enfant;> à 10 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Enfant;> à 10 ans;Nez qui coule ;;non;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;Nez bouché ;;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;Nez sec ;;non;;Jet Normal;
+Enfant;> à 10 ans;Nez qui picote;;non;;Jet Normal;
+Enfant;> à 10 ans;Nez qui éternue;;non;;Jet Normal;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ";;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez qui picote ";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez qui éternue";;non;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez bouché ; Nez sec";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez qui picote";;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;"Nez bouché ; Nez qui éternue ";;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;"Nez sec ; Nez qui picote";;non;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez qui picote";;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez qui éternue";;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;Jet Fort 
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez qui picote ; Nez qui éternue";;non;;Eucalyptus ;Jet Normal 
+Enfant;> à 10 ans;"Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Enfant;> à 10 ans;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;Nez qui coule ;;oui;;Jet Normal ;Jet Fort 
+Adulte;Homme;Nez bouché ;;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;Nez sec ;;oui;;Jet Normal ;Jet Fort 
+Adulte;Homme;Nez qui picote;;oui;;Jet Normal;
+Adulte;Homme;Nez qui éternue;;oui;;Jet Normal;
+Adulte;Homme;"Nez qui coule ; Nez bouché ";;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;"Nez qui coule ; Nez sec ";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez qui picote ";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez qui éternue";;oui;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez bouché ; Nez sec";;oui;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez qui picote";;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;"Nez bouché ; Nez qui éternue ";;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;"Nez sec ; Nez qui picote";;oui;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez qui picote";;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez qui éternue";;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;"Nez qui coule ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez qui coule ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez qui picote ; Nez qui éternue";;oui;;Hypertonique ;Jet Normal 
+Adulte;Homme;"Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;;Jet Normal ;
+Adulte;Homme;Nez qui coule ;;non;;Jet Normal ;Jet Fort 
+Adulte;Homme;Nez bouché ;;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;Nez sec ;;non;;Jet Normal ;Jet Fort 
+Adulte;Homme;Nez qui picote;;non;;Jet Normal;
+Adulte;Homme;Nez qui éternue;;non;;Jet Normal;
+Adulte;Homme;"Nez qui coule ; Nez bouché ";;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;"Nez qui coule ; Nez sec ";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez qui picote ";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez qui éternue";;non;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez bouché ; Nez sec";;non;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez qui picote";;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;"Nez bouché ; Nez qui éternue ";;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;"Nez sec ; Nez qui picote";;non;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez qui picote";;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez qui éternue";;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;"Nez qui coule ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez qui coule ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez bouché ; Nez qui picote ; Nez qui éternue";;non;;Eucalyptus ;Jet Normal 
+Adulte;Homme;"Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;Jet Fort 
+Adulte;Homme;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Homme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;;Jet Normal ;
+Adulte;Femme;Nez qui coule ;;oui;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez bouché ;;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;Nez sec ;;oui;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez qui picote;;oui;oui;Jet Normal;
+Adulte;Femme;Nez qui éternue;;oui;oui;Jet Normal;
+Adulte;Femme;"Nez qui coule ; Nez bouché ";;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui éternue";;oui;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote";;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez bouché ; Nez qui éternue ";;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote";;oui;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez sec ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui picote ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui picote";;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui éternue";;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;oui;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote ; Nez qui éternue";;oui;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;oui;Jet Normal ;
+Adulte;Femme;Nez qui coule ;;oui;non;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez bouché ;;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;Nez sec ;;oui;non;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez qui picote;;oui;non;Jet Normal;
+Adulte;Femme;Nez qui éternue;;oui;non;Jet Normal;
+Adulte;Femme;"Nez qui coule ; Nez bouché ";;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui éternue";;oui;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote";;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez bouché ; Nez qui éternue ";;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote";;oui;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez sec ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui picote ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui picote";;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui éternue";;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;oui;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote ; Nez qui éternue";;oui;non;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;oui;non;Jet Normal ;
+Adulte;Femme;Nez qui coule ;;non;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez bouché ;;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;Nez sec ;;non;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez qui picote;;non;oui;Jet Normal;
+Adulte;Femme;Nez qui éternue;;non;oui;Jet Normal;
+Adulte;Femme;"Nez qui coule ; Nez bouché ";;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui éternue";;non;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote";;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez bouché ; Nez qui éternue ";;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote";;non;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez sec ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui picote ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui picote";;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui éternue";;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;non;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote ; Nez qui éternue";;non;oui;Hypertonique ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;oui;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;oui;Jet Normal ;
+Adulte;Femme;Nez qui coule ;;non;non;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez bouché ;;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;Nez sec ;;non;non;Jet Normal ;Jet Fort 
+Adulte;Femme;Nez qui picote;;non;non;Jet Normal;
+Adulte;Femme;Nez qui éternue;;non;non;Jet Normal;
+Adulte;Femme;"Nez qui coule ; Nez bouché ";;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui éternue";;non;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec";;non;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote";;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;"Nez bouché ; Nez qui éternue ";;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote";;non;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez sec ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui picote ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui picote";;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez qui éternue";;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez qui picote ; Nez qui éternue";;non;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote";;non;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez bouché ; Nez qui picote ; Nez qui éternue";;non;non;Eucalyptus ;Jet Normal 
+Adulte;Femme;"Nez sec ; Nez qui picote ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;non;Jet Normal ;Jet Fort 
+Adulte;Femme;"Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;non;Jet Normal ;
+Adulte;Femme;"Nez qui coule ; Nez bouché ; Nez sec ; Nez qui picote ; Nez qui éternue";;non;non;Jet Normal ;

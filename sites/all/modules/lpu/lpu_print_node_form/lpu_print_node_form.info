@@ -1,0 +1,4 @@
+name = LPU Print Node Form
+description = Module permettant de récupérer un formulaire d'ajout de noeud
+version = 7.x-1.0-dev
+core = 7.x

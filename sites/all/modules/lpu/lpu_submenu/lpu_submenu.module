@@ -1,0 +1,70 @@
+<?php
+
+require_once(drupal_get_path('module', 'lpu_submenu'). '/lpu_submenu.inc');
+
+function lpu_submenu_block_info() {
+  $blocks['lpu_submenu'] = array(
+    'info' => t('Sub menu'),
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  $blocks['lpu_menu_first_level'] = array(
+    'info' => t('Menu first level'), 
+    'cache' => DRUPAL_NO_CACHE,
+  );
+  return $blocks;
+}
+
+function lpu_submenu_block_configure($delta = '') {
+  $form = array();
+  if ('lpu_submenu' == $delta) {
+    /*
+    $form['node_recent_block_count'] = array(
+      '#type' => 'select', 
+      '#title' => t('Number of recent content items to display'), 
+      '#default_value' => variable_get('node_recent_block_count', 10), 
+      '#options' => drupal_map_assoc(array(2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 25, 30)),
+    );
+    //*/
+  }
+  return $form;
+}
+
+function lpu_submenu_block_view($delta = '') {
+  switch($delta) {
+    case 'lpu_submenu':
+      $pid = variable_get('menu_main_links_source', 'main-menu');
+      $tree = lpu_submenu_tree($pid);
+      
+      foreach($tree as $main_menu_link) {
+        if (is_array($main_menu_link) && isset($main_menu_link['#original_link'])) {
+          if ($main_menu_link['#original_link']['in_active_trail']) {
+            $submenu = $main_menu_link;
+            break;
+          }
+        }
+      }
+      $block = array();
+      if (isset($submenu)) {
+        // remove sublevel of submenu to only display the second level
+        if (isset($submenu['#below'])) {
+          foreach($submenu['#below'] as $key => $elem) {
+            if (isset($elem['#below'])) {
+              $submenu['#below'][$key]['#below'] = array();
+            }
+          }
+        }
+        $block['subject'] = $submenu['#title'];
+        $block['content'] = drupal_render($submenu['#below']);  
+      }
+      return $block;
+    break;
+    case 'lpu_menu_first_level': 
+      $pid = variable_get('menu_main_links_source', 'main-menu');
+      $tree_output = lpu_submenu_tree($pid, 1);
+      $output = drupal_render($tree_output);
+      $block = array();
+      $block['content'] = $output;
+      return $block;
+    break;
+  }
+}

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Communiqués de presse feature.
+ */
+
+include_once 'communiques_de_presse.features.inc';

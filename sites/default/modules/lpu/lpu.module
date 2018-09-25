@@ -1,0 +1,153 @@
+<?php
+
+/**
+ * [lpu_form_alter description]
+ * @param  [type] $form       [description]
+ * @param  [type] $form_state [description]
+ * @param  [type] $form_id    [description]
+ * @return [type]             [description]
+ */
+function lpu_form_alter(&$form, &$form_state, $form_id) {
+
+    /**
+     * Génére un tableau js listant les langues des noeud listé par le champ node_reference.
+     * Le js se charge ensuite de n'affiché que les noeud ayant la même langue que le champs langue du noeud.
+     */
+    $addJS = false;
+    $fieldIds = array(
+        'field_ref_gamme' => array(),
+        'field_ref_categorie' => array(),
+    );
+    $tab = array();
+    foreach ($form as $fieldName => &$field) {
+        if (array_key_exists($fieldName, $fieldIds)) {
+            if (isset($field['#language'])) {
+                $lang = $field['#language'];
+            }
+            else {
+                $lang = 'und';
+            }
+            if (isset($field[$lang]) && isset($field[$lang]['#options'])) {
+                $options = $field[$lang]['#options'];
+                foreach ($options as $nid => $optionLabel) {
+                    $node = node_load($nid);
+                    if (is_object($node)) {
+                        $tab['nid-'.$nid] = $node->language;
+                        $fieldIds[$fieldName] = array(
+                            'id' => $fieldName,
+                            'html-class' => 'form-item-'. str_replace('_', '-', $fieldName). '-' . $lang . '-%nid%',
+                        );
+                    }
+
+                }
+            } 
+            $addJS = true;
+
+        }
+    }
+    if ($addJS) {
+        drupal_add_js(array('lpu' => array('back_noderef_lang' => $tab)), 'setting');
+
+        drupal_add_js(array('lpu' => array('back_noderef_hide_lang' => $fieldIds)), 'setting');
+        drupal_add_js(drupal_get_path('module', 'lpu') . '/js/noderef_lang.js', 'file');
+        
+    }
+
+    if ($form['#form_id'] == 'lang_dropdown_form') {
+        // if (isset($form['en']) && isset($form['en']['#default_value'])) $form['en']['#default_value'] = 'http://new.isoshop.com/cgi-bin/client/modele.pl?shop=GSH&langue=2&action=set_session_tnt&stnt1=7&modele=home_pm';
+        if (isset($form['it']) && isset($form['it']['#default_value'])) $form['it']['#default_value'] = 'http://new.isoshop.com/cgi-bin/client/modele.pl?shop=GSH&langue=5&action=set_session_tnt&stnt1=7&modele=home_pm';
+    }
+}
+
+// Add microformat element on breadcrumbs elements
+function lpu_menu_breadcrumb_alter(&$active_trail, $item) {
+    foreach($active_trail as &$trail) {
+        if ($trail['title'] == 'Bébés' && isset($trail['mlid']) && $trail['mlid'] == '566') {
+            $trail['title'] = 'Bébé';
+        }
+        $trail['localized_options']['attributes']['itemprop'] = 'URL';
+        $trail['localized_options']['html'] = TRUE;
+        $trail['title'] = '<span itemprop="title">'. $trail['title'] . '</span>';
+    }
+}
+
+function lpu_menu() {
+    $items = array();
+    $items['espace-prive/%'] = array(
+        'title'            => t('Private Space'),
+        'description'      => 'redirect to private space',
+        'access arguments' => array('access content'),
+        'page callback'    => 'lpu_private_space',
+        'page arguments'   => array(1),
+        'type'             => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+
+function lpu_private_space($space = 'pharmacien') {
+    global $user;
+    module_load_include('pages.inc', 'user');
+    if(is_array($user->roles) && in_array('Médecin', $user->roles) && $space == 'pharmacien') {
+        lpu__user_logout();
+        return drupal_goto('user/login');
+        
+    }
+    elseif(is_array($user->roles) && in_array('Pharmacien', $user->roles) && $space == 'medecin') {
+        lpu__user_logout();
+        return drupal_goto('user/login');
+    }
+    elseif(is_array($user->roles) && in_array('Médecin', $user->roles) && $space == 'medecin') {
+        return drupal_goto('node/97');
+    }
+    elseif(is_array($user->roles) && in_array('Pharmacien', $user->roles) && $space == 'pharmacien') {
+        return drupal_goto('node/83');
+    }
+    else {
+        return drupal_goto('user/login');
+    }
+}
+
+function lpu__user_logout() {
+  global $user;
+  module_invoke_all('user_logout', $user);
+
+  // Destroy the current session, and reset $user to the anonymous user.
+  session_destroy();
+}
+
+/**
+ * Remplace les token de node references pour les transformer en liste ul li
+ */
+function lpu_tokens_alter(array &$replacements, array $context) {
+    $tokens = array(
+        '[node:field-pour-qui]',
+        '[node:field_pour_qui]',
+        '[node:field-symptomes]',
+        '[node:field_symptomes]',
+    );
+    foreach ($tokens as $key) {
+        if (isset($replacements[$key])) {
+            if (is_string($replacements[$key]) && !strstr($replacements[$key], '<ul class="tag-list">')) {
+                $replacements[$key] = explode(',', $replacements[$key]);
+                if (count($replacements[$key]) > 0) {
+                    $replacements[$key] = '<ul class="tag-list"><li>' . implode('</li><li>', $replacements[$key]) . '</li></ul>';
+                }
+            }
+        }
+    }
+}
+
+
+function lpu_urlt($path, $lang = null) {
+    global $language;
+    if($lang === null) {
+        $lang = $language->language;
+    }
+
+    $urls = translation_path_get_translations($path);
+    if (isset($urls[$language->language])) {
+        return url($urls[$lang]);
+    }
+    return url($path);
+}

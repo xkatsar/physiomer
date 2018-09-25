@@ -1,0 +1,75 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    vertical-align: top;
+    font-family: arial, sans-serif;
+    border: none;
+    box-shadow: none;
+    border-radius: 0px;
+}
+
+html {
+    text-align: center;
+}
+
+body {
+    font-size: 12px;
+    width: 931px;
+    margin: 0px auto;
+}
+
+div, p, a, span, ul, li, img, iframe, b, u {
+    border: none;
+}
+
+u {
+    text-decoration: underline;
+}
+
+ul {
+    list-style: disc;
+}
+
+li {
+    margin-left: 20px;
+}
+
+a {
+    text-decoration: underline;
+    color: #444444;
+}
+
+a:focus {
+    outline: none;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+
+input[type="text"],
+input[type="submit"],
+input[type="button"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+textarea,
+select,
+button {
+    border: 1px solid #bfbfbf;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    padding: 4px;
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+textarea {
+    cursor: text;
+}
+
+hr {
+    border-top: 1px solid #3e6778;
+}

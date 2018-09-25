@@ -1,0 +1,15 @@
+name = Basetheme Regions
+description = Theme de base pour le développement / intégration. Layout HTML, basé sur basetheme, utilisable avec les blocs par défaut de drupal.
+core = 7.x
+engine = phptemplate
+base theme = basetheme
+
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_second] = Second Sidebar
+regions[footer]         = Footer

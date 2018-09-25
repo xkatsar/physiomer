@@ -1,0 +1,1 @@
+﻿package  {	import flash.display.MovieClip;		public class Physiometre extends MovieClip{		public function Physiometre() {			// constructor code			trace('physiometre');		}	}	}

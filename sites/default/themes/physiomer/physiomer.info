@@ -1,0 +1,26 @@
+name = Physiomer
+description = Custom responsive theme for Physiomer.
+core = 7.x
+engine = phptemplate
+base theme = basetheme
+
+stylesheets[all][] = stylesheets/style.css
+stylesheets[all][] = bootstrap/css/bootstrap.min.css
+stylesheets[all][] = stylesheets/override.css
+
+scripts[] = bootstrap/js/bootstrap.min.js
+scripts[] = ../../../all/libraries/jcarousel/lib/jquery.jcarousel.min.js
+scripts[] = javascript/main.js
+
+regions[header]             = Header
+regions[navigation]         = Navigation
+regions[navigation_space]   = Navigation Espace
+regions[highlighted]        = Highlighted
+regions[help]               = Help
+regions[content]            = Content
+regions[content_home_space] = Content (HOME ESPACE)
+regions[sidebar_first]      = First Sidebar
+regions[sidebar_first_top]  = First Sidebar Top
+regions[sidebar_second]     = Second Sidebar
+regions[sup_footer]         = Sup Footer
+regions[footer]             = Footer

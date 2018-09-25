@@ -1,0 +1,37 @@
+<?php
+function physiomer_analytics_menu() {
+    $items = array();
+    $items['admin/config/analytics'] = array(
+        'title' => 'Code analytics',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('physiomer_analytics_form'),
+        'access callback' => 'user_access',
+        'access arguments' => array('access administration pages'),
+        'weight' => 30,
+        // 'file' => 'webform.submissions.inc',
+        'type' => MENU_NORMAL_ITEM,
+    );
+    return $items;
+}
+
+function physiomer_analytics_form() {
+    $form = array();
+
+    $langs = language_list();
+
+    foreach ($langs as $langcode => $lang) {
+        $form["physiomer_analytics_".$langcode] = array(
+            '#type' => 'textarea',
+            '#title' => t('Code Analytics ') . t($lang->name),
+            '#default_value' => variable_get("physiomer_analytics_".$langcode, ''),
+            '#size' => 20,
+        );
+    }
+
+    return system_settings_form($form);
+}
+
+function physiomer_analytics_process_html(&$vars) {
+    global $language;
+    $vars['page_bottom'] .= '<div style="display:none">'.variable_get("physiomer_analytics_".$language->language, '').'</div>';
+}

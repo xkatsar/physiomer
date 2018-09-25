@@ -1,0 +1,36 @@
+msgid ""
+msgstr ""
+
+msgid "Start again"
+msgstr "Recommencer"
+
+msgid "Previous step"
+msgstr "Étape précédente"
+
+msgid "Read the product information"
+msgstr "Voir la fiche produit"
+
+msgid "Next step"
+msgstr "Étape suivante"
+
+msgid "Continue"
+msgstr "Je valide"
+
+msgid "Step 1"
+msgstr "Étape 1"
+
+msgid "Step 2"
+msgstr "Étape 2"
+
+msgid "Step 3"
+msgstr "Étape 3"
+
+msgid "Select your age range"
+msgstr "Je choisis ma tranche d'âge"
+
+msgid "Select your symptoms"
+msgstr "Je choisis mes symptômes"
+
+msgid "Select your profile"
+msgstr "Je précise mon profil"
+

@@ -1,0 +1,7 @@
+<?php
+
+function lpu_content_check_menu_form_alter(&$form, $form_state, $form_id) {
+  if (in_array($form_id, array('actualites_node_form', 'agenda_node_form'))) {
+    drupal_add_js(drupal_get_path('module', 'lpu_content_check_menu'). '/autocheck_menu.js');
+  }
+}

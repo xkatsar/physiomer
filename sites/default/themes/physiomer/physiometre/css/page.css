@@ -1,0 +1,37 @@
+#canvas {
+}
+
+#step3 {
+    background: url("image/step-3/background.jpg") left top no-repeat transparent;
+    overflow: hidden;
+    height: 365px;
+}
+
+    #step3 #step3Left {
+        background: url("image/step-3/1-0.png") left top no-repeat transparent;
+        width: 373px;
+        height: 218px;
+        margin: 74px 31px 0px 61px;
+        float: left;
+        overflow: hidden;
+    }
+    
+        #step3 #step3Left #canvasLeft {
+            width: 373px;
+            height: 218px;
+            overflow: hidden;
+        }
+    
+    #step3 #step3Right {
+        background: url("image/step-3/2-0.png") left top no-repeat transparent;
+        width: 373px;
+        height: 218px;
+        margin: 74px 61px 0px 31px;
+        float: left;
+    }
+
+        #step3 #step3Right #canvasRight {
+            width: 373px;
+            height: 218px;
+            overflow: hidden;
+        }

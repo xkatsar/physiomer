@@ -1,0 +1,18 @@
+; Based on example from
+  http://www.slideshare.net/zugec/fields-in-core-how-to-create-a-custom-field
+; and http://drupal.org/project/examples .
+name = Postal Code
+description = Postal Code Field Module
+core = 7.x
+dependencies[] = field_ui
+dependencies[] = field
+dependencies[] = options
+configure = admin/structure/postal_code
+package = Fields
+
+; Information added by drupal.org packaging script on 2013-01-15
+version = "7.x-1.4"
+core = "7.x"
+project = "postal_code"
+datestamp = "1358282051"
+

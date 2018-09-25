@@ -1,0 +1,13 @@
+name = LPU Spaces
+description = 
+version = 7.x-1.0-dev
+core = 7.x
+
+;stylesheets[all][] = ../../libraries/mCustomScrollbar/jquery.mCustomScrollbar.css
+;stylesheets[all][] = popin_lang/popin.css
+;scripts[] = ../../libraries/mCustomScrollbar/jquery.mCustomScrollbar.concat.min.js
+;scripts[] = ../../libraries/jquery.bpopup.min.js
+;scripts[] = ../../libraries/jcookies.js
+;scripts[] = popin_lang/main.js
+
+files[] = lpu_spaces.module

@@ -1,0 +1,91 @@
+<?php
+/*function physiomer_boot() {
+    $setCookie = isset($_GET['nsp']) ? true : false;
+    if ($setCookie) {
+        setcookie('hide_popin_lang', true);
+        $_COOKIE['hide_popin_lang'] = true;
+    }
+    $showPopin = isset($_GET['spl']) ? true : false;
+    if ($showPopin) {
+        setcookie('hide_popin_lang', false);
+        $_COOKIE['hide_popin_lang'] = false;
+    }
+
+}
+
+
+function physiomer_page_build(&$page) {
+    $showPopin = (!isset($_COOKIE['hide_popin_lang']) || (isset($_COOKIE['hide_popin_lang']) && $_COOKIE['hide_popin_lang'] == false));
+
+    $showPopin = isset($_GET['spl']) || !(
+          ! isset($_SERVER['HTTP_REFERER']) 
+        || strpos($_SERVER['HTTP_REFERER'], 'http://') === FALSE 
+        || strpos($_SERVER['HTTP_REFERER'], 'http://www.physiomer.fr') === TRUE
+        || strpos($_SERVER['HTTP_REFERER'], 'http://prod.physiomer.fr') === TRUE 
+        || strpos($_SERVER['HTTP_REFERER'], 'http://physiomer.fr') === TRUE
+    );
+    if ($showPopin) {
+        $tpl = theme('physiomer_popin_lang', array());
+        $page['footer']['popin_lang'] = array('#markup' => $tpl);
+    }
+}*/
+
+function physiomer_menu() {
+    $items = array();
+    /*$items['admin/config/Physiomer Redirections Langues'] = array(
+        'title' => 'Redirections langues',
+        'page callback' => 'drupal_get_form',
+        'page arguments' => array('physiomer_admin_form'),
+        'access callback' => 'user_access',
+        'access arguments' => array('access administration pages'),
+        'weight' => 30,
+        // 'file' => 'webform.submissions.inc',
+        'type' => MENU_NORMAL_ITEM,
+    );*/
+    // $items['jeu25ans'] = array(
+    //     'title' => 't',
+    //     'page callback' => 'physiomer_jeu25ans',
+    //     'page arguments' => array(1),
+    //     'access callback' => 'user_access',
+    //     'access arguments' => array('access content'),
+    //     'weight' => 30,
+    //     'file' => 'jeu25ans/page.inc',
+    //     'type' => MENU_NORMAL_ITEM,
+    // );
+    //return $items;
+}
+
+/*function physiomer_admin_form() {
+    $form = array();
+
+
+
+    $form["physiomer_redirections"] = array(
+        '#type' => 'textarea',
+        '#title' => t('Liste des Redirections'),
+        '#default_value' => variable_get("physiomer_redirections", 'http://www.physiomer.fr|France'),
+        '#size' => 20,
+        '#description' => "Respecter le format suivant : <br/>http://physiomer.com|Libellé du pays ou de la langue",
+        '#required' => TRUE,
+    );
+
+    return system_settings_form($form);
+}
+
+
+function physiomer_theme($existing, $type, $theme, $path) {
+    return array(
+        'physiomer_popin_lang' => array(
+            'template' => '/popin_lang/popin',
+            'variables' => array(
+                'forum_per_page' => NULL,
+            ),
+        )
+    );
+}*/
+
+
+
+
+
+

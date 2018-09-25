@@ -1,0 +1,25 @@
+name = Physiomer2013
+description = Thème du site Physiomer - 2013
+core = 7.x
+engine = phptemplate
+base theme = basetheme
+
+stylesheets[all][] = stylesheets/style.css
+
+scripts[]           = ../../../all/libraries/jcarousel/lib/jquery.jcarousel.min.js
+;scripts[]           = stylesheets/twitter_bootstrap/js/bootstrap-tab.js
+scripts[] 				  = javascript/main.js
+;scripts[] 				  = javascript/slideshow.js
+
+regions[header]         = Header
+regions[navigation]     = Navigation
+regions[navigation_space]     = Navigation Espace
+regions[highlighted]    = Highlighted
+regions[help]           = Help
+regions[content]        = Content
+regions[content_home_space]        = Content (HOME ESPACE)
+regions[sidebar_first]  = First Sidebar
+regions[sidebar_first_top]  = First Sidebar Top
+regions[sidebar_second] = Second Sidebar
+regions[sup_footer]     = Sup Footer
+regions[footer]         = Footer

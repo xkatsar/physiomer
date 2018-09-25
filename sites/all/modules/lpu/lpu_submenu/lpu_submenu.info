@@ -1,0 +1,7 @@
+name = LPU SubMenu
+description = créé un bloc affichant le 2e niveau du menu principal du premier niveau auquel appartient le contenu actuel
+version = 7.x-1.0-dev
+core = 7.x
+
+files[] = lpu_submenu.inc
+files[] = lpu_submenu.module

@@ -1,0 +1,1 @@
+<?php include('node--tips-video-teaser.tpl.php');

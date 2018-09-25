@@ -1,0 +1,28 @@
+# French translation of MD Construction (7.x-1.6)
+# Copyright (c) 2012 by the French translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: MD Construction (7.x-1.6)\n"
+"POT-Creation-Date: 2012-10-13 22:12+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: French\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n>1);\n"
+
+msgid "Home"
+msgstr "Accueil"
+msgid "Image URL"
+msgstr "URL de l'image"
+msgid "Green"
+msgstr "Vert"
+msgid "Blue"
+msgstr "Bleu"
+msgid "Theme Specific Settings"
+msgstr "Paramètres spécifiques au thème"
+msgid "Description text"
+msgstr "Texte de description"
+msgid "Twitter username"
+msgstr "Nom d'utilisateur Twitter"

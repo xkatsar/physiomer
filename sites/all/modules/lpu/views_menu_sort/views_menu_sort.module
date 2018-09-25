@@ -1,0 +1,82 @@
+<?php
+
+function views_menu_sort_views_api() {
+  return array(
+    'api' => 3,
+  );
+}
+
+function views_menu_sort_views_data() {
+
+  // Basic table information.
+  $data['menu_node'] = array(
+    'table' => array(
+      'group' => t('Menu'),
+      'join' => array(
+        'node' => array(
+          'left_field' => 'nid',
+					'field' => 'nid',
+        ),				
+      ),
+    )
+  );
+
+
+ // Our fields
+  $data['menu_node']['mlid'] = array(
+    'title' => t('Menu link id'),
+    'help' => t('Unique menu item dentifier.'),
+  );
+
+  // Adds our field in the "Filters" section of Views
+  $data['menu_node']['mlid']['filter'] = array(
+    'handler' => 'views_handler_filter_numeric',
+  );
+ 
+// Adds our field in the "Fields" section of Views
+  $data['menu_node']['mlid']['field'] = array(
+    'handler' => 'views_handler_field_numeric',
+    'click sortable' => TRUE,
+  );
+
+
+  // Basic table information.
+  $data['menu_links'] = array(
+    'table' => array(
+				'group' => t('Menu'),
+				'join' => array(
+					'menu_node' => array(
+						'left_field' => 'mlid',
+						'field' => 'mlid',
+					),
+					'node' => array(
+						'left_table' => 'menu_node',
+						'left_field' => 'mlid',
+						'field' => 'mlid',
+					),				
+      ),
+		),
+  );
+
+
+ // Our fields
+  $data['menu_links']['weight'] = array(
+    'title' => t('Menu item weight'),
+    'help' => t('Menu item weight for order'),
+  );
+ 
+ // Adds our field in the "Fields" section of Views
+  $data['menu_links']['weight']['field'] = array(
+    'handler' => 'views_handler_field_numeric',
+    'click sortable' => TRUE,
+  );
+ 
+	
+  // Adds our field in the "Sort" section of Views
+  $data['menu_links']['weight']['sort'] = array(
+    'handler' => 'views_handler_sort',
+  ); 
+ 
+  return $data;
+
+}

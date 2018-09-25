@@ -1,0 +1,7 @@
+name = Views menu sort
+description = Provides a Views sort field that orders nodes according to their position in the menu structure.
+package = Views
+dependencies[] = menu_node
+
+core = 7.x
+version = 7.x-1.0

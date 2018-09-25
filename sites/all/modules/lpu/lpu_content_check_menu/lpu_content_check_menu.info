@@ -1,0 +1,4 @@
+name = LPU Content Check Menu
+description = Module permettant d'activer automatiquement la création d'un lien de menu juste après l'édition du titre d'un contenu
+version = 7.x-1.0-dev
+core = 7.x

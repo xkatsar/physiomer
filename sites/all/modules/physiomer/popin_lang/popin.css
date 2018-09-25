@@ -1,0 +1,15 @@
+.popin-lang { background:url('./img/popin-lang-background.png') top left no-repeat;padding-top:150px;padding-bottom:50px;width:812px;height:215px; }
+
+.popin-lang .fake-select{ position:relative;width:355px;margin:auto;margin-top:20px;text-align:left;font-family:Arial,sans-serif;z-index: 1; }
+
+.popin-lang .fake-select .list-selected{ background:url('./img/select-background.png');padding:8px 0;cursor:pointer; }
+
+.popin-lang .fake-select .list-selected:hover .selection{ color:#000; }
+
+.popin-lang .fake-select .list-selected .selection{ font-size:14px;display:block;margin-left:30px;color:#009fe3; }
+
+.popin-lang .fake-select .list-container { position:absolute;top:28px;left:1px;right:0;background:#ffffff url('./img/select-shadow.png') top left repeat-x;padding-top:10px;padding-bottom:5px;-webkit-border-radius:0 0 5px 5px;-moz-border-radius:0 0 5px 5px;border-radius:0 0 5px 5px;max-height:300px;display:none; }
+.popin-lang .fake-select .list-container ul{ margin:0;padding:0;list-style:none;list-style-image:none;list-style-type:none; }
+.popin-lang .fake-select .list-container ul li{ display:block;margin:0;padding:0;list-style:none;list-style-image:none;list-style-type:none;padding:3px 0px 3px 30px;font-family:Arial,sans-serif;font-size:14px;color:#000;cursor:pointer; }
+.popin-lang .fake-select .list-container ul li.active,.popin-lang .fake-select .list-container ul li:hover{ color:#fff;background:#009fe3; }
+
