@@ -5,15 +5,16 @@
       if (!Drupal.settings.custom_search.solr) {
         // Check if the search box is not empty on submit
         $('form.search-form', context).submit(function(){
-          var box = $(this).find('input.custom-search-box');
+          var $this = $(this);
+          var box = $this.find('input.custom-search-box');
           if (box.val() != undefined && box.val() == '') {
-            $(this).find('input.custom-search-box').addClass('error');
+            $this.find('input.custom-search-box').addClass('error');
             return false;
           }
           // If basic search is hidden, copy or value to the keys
-          if ($(this).find('#edit-keys').parents('div.element-invisible').attr('class') == 'element-invisible') {
-            $(this).find('#edit-keys').val($(this).find('#edit-or').val());
-            $(this).find('#edit-or').val('');
+          if ($this.find('#edit-keys').parents('div.element-invisible').attr('class') == 'element-invisible') {
+            $this.find('#edit-keys').val($this.find('#edit-or').val());
+            $this.find('#edit-or').val('');
           }
           return true;
         });
@@ -24,8 +25,7 @@
 
       // Displays Popup.
       $('form.search-form input.custom-search-box', context).bind('click focus', function(e){
-        $this = $(this);
-        $parentForm = $this.parents('form');
+        var $parentForm = $(this).parents('form');
         // check if there's something in the popup and displays it
         var popup = $parentForm.find('fieldset.custom_search-popup');
         if (popup.find('input,select').length && !popup.hasClass('opened')) {
@@ -63,50 +63,7 @@
         }
       });
 
-      // Reselect types and terms in advanced search
-      var edit_keys = $('#edit-keys').val();
-      if(edit_keys) {
-        // types
-        var pos = edit_keys.indexOf('type:');
-        if (pos) {
-          var pos2 = edit_keys.indexOf(' ', pos);
-          if (pos2 == -1) {
-            pos2 = edit_keys.length;
-          }
-          var types = edit_keys.substring(pos + 5,pos2);
-          types = types.split(',');
-          for (var i = 0; i < types.length; i++) {
-            $('.search-form input:checkbox[value=' + types[i] + ']').attr('checked', true);
-          }
-        }
-        // terms
-        var pos = edit_keys.indexOf('term:');
-        if (pos) {
-          var pos2 = edit_keys.indexOf(' ', pos);
-          if (pos2 == -1) {
-            pos2 = edit_keys.length;
-          }
-          var terms = edit_keys.substring(pos + 5, pos2);
-          terms = terms.split(',');
-          for (var i = 0; i < terms.length; i++) {
-            $('#edit-term option[value=' + terms[i] + ']').attr('selected', true);
-          }
-        }
-        // languages
-        var pos = edit_keys.indexOf('language:');
-        if (pos) {
-          var pos2 = edit_keys.indexOf(' ', pos);
-          if (pos2 == -1) {
-            pos2 = edit_keys.length;
-          }
-          var languages = edit_keys.substring(pos + 9,pos2);
-          languages = languages.split(',');
-          for (var i = 0; i < languages.length; i++) {
-            $('.search-advanced #edit-language-' + languages[i]).attr('checked', true);
-          }
-        }
-      }
-
+      // Handle popup.
       var popup = $('fieldset.custom_search-popup:not(.custom_search-processed)', context).addClass("custom_search-processed");
       popup.click(function(e){
         e.stopPropagation();

@@ -14,26 +14,23 @@
  * the complete search path
  */
 
-function _custom_search_apachesolr_search($variables) {
-  // Set default path in case the core search page path isn't set yet.
-  $path = 'search/apachesolr_search';
-  $solr_info = (array) apachesolr_search_page_load('core_search');
-  if (isset($solr_info['search_path'])) {
-    // Use the configured Solr search path instead of default path.
-    $path = $solr_info['search_path'];
-  }
-  $type = $path . '/' . $variables['keywords'];
+function _custom_search_apachesolr_search($variables, &$keys, $fields) {
+  // Use the search info for the apachesolr module to get the search path.
+  $solr_info = apachesolr_search_search_info();
+  $type = 'search/' . $solr_info['path'] . '/' . $variables['keywords'];
   $keys = array();
 
   if (count($variables['types']) && !in_array('all', $variables['types'])) {
-    foreach ($variables['types'] as $t) {
-      $keys['f[' . count($keys) . ']'] = 'bundle:' . $t;
+    if (count($variables['types']) > 1) {
+      $keys['fq[' . count($keys) . ']'] = 'bundle:(' . implode(' OR ', $variables['types']) . ')';
+    }
+    elseif (count($variables['types']) == 1) {
+      $keys['fq[' . count($keys) . ']'] = 'bundle:' . $variables['types'][0];
     }
   }
 
   if (module_exists('taxonomy') && count($variables['terms'])) {
     // Get all fields info to get correct filter names.
-    $fields = field_info_fields();
     $taxonomy_fields = array();
     foreach ($fields as $name => $settings) {
       if ($settings['type'] == 'taxonomy_term_reference') {
@@ -44,9 +41,16 @@ function _custom_search_apachesolr_search($variables) {
     // Build keys for taxonomy.
     foreach ($variables['terms'] as $t) {
       $vocid = taxonomy_term_load($t)->vid;
-      $keys['f[' . count($keys) . ']'] = 'im_' . $taxonomy_fields[$vocid] . ':' . $t;
+      $keys['fq[' . count($keys) . ']'] = 'im_' . $taxonomy_fields[$vocid] . ':' . $t;
     }
   }
 
+  foreach (module_implements('custom_search_apachesolr_processing') as $module) {
+    $function = $module . '_custom_search_apachesolr_processing';
+    
+    if (function_exists($function)) {
+      call_user_func_array($function, array(&$keys, $fields, $variables['other']));
+    }
+  }
   return array('path' => $type, 'query' => $keys);
 }
