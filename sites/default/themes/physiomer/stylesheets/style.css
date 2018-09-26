@@ -9553,6 +9553,11 @@ h1.blue-line-no-uppercase, h2.blue-line-no-uppercase, h3.blue-line-no-uppercase{
   text-align: justify;
 }
 
+.front #main #content-main-node img {
+    display: block;
+    margin: 0 auto;
+}
+
 @media (max-width: 767px) {
   footer#footer #block-menu-block-4 ul.menu li.last.leaf {
     margin-bottom: 20px;
