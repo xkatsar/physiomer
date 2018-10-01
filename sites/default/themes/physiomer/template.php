@@ -123,6 +123,7 @@ function physiomer_preprocess_page(&$vars){
     drupal_add_js(array('current_language' => $language), 'setting');
     drupal_add_js(array('physiomer_i18n' => array('return_page_gamme' => t('&lt; Return to page'))), 'setting');
     drupal_add_js(array('physiomer_i18n' => array('contact_us_for_password' => t('Contact us to retrieve a password'))), 'setting');
+    drupal_add_css('https://use.fontawesome.com/releases/v5.3.1/css/all.css', array('type' => 'external'));
 
     if ($language->language == 'en') {
         $vars['logo'] = str_replace('logo.png', 'logo-en.png', $vars['logo']);

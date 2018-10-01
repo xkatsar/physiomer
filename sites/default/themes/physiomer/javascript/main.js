@@ -222,17 +222,34 @@
     })( jQuery );
 
     jQuery( document ).ready(function($) {
-      $( ":uppercase:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
-      $( ":smallcaps:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
-      $( ".remove-accents, .remove-accents > *:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
-      $( document ).ajaxComplete(function( event, request, settings ) {
         $( ":uppercase:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
         $( ":smallcaps:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
         $( ".remove-accents, .remove-accents > *:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
-      });
+        $( document ).ajaxComplete(function( event, request, settings ) {
+            $( ":uppercase:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+            $( ":smallcaps:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+            $( ".remove-accents, .remove-accents > *:not(input[type!=submit], textarea, .no-remove-accents)" ).removeAcc();
+        });        
     });
+    
+        // Back top
+        $(window).scroll(function() {
+            if ($(this).scrollTop() > 500) {
+                $('#back-top').css('bottom', '0');
+            } else {
+                $('#back-top').css('bottom', '-34px');
+            }
+        });
 
-	});
+        // scroll body to top on click
+        $('#back-top').click(function() {
+            $('body,html').animate({
+                scrollTop: 0,
+            }, 1300);
+            return false;
+        });
+        //
+    });
 
 	function initVerticalSlideshow(){
 		var currentPosY = 0;
@@ -370,9 +387,17 @@
 				$('#block-views-products-list-products .view-grouping').hide();
 				$('#block-views-products-list-products').find("[data-filter='" + $(this).attr('href').replace('#','') + "']").show();
 			}
+                        if ($(window).width() < 767){
+                            scrollToAnchor('product-list-header');
+                        }
 			return false;
 		});
 	}
-
+        
+        function scrollToAnchor(aid) {
+            var aTag = $("div[id='"+aid+"']");
+            $('html,body').animate({scrollTop:aTag.offset().top},'slow');
+        }
+                        
 
 })(window.jQuery);

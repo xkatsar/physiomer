@@ -56,6 +56,10 @@
             </nav>
         </div>
     </header> <!-- /#header -->
+    
+    <!-- backtop open -->
+    <div id="back-top"><i class="fas fa-long-arrow-alt-up"></i></div>
+    <!-- backtop close -->
 
     <?php if ($page['highlighted']): ?><div id="highlighted"><?php print render($page['highlighted']); ?></div><?php endif; ?>
 

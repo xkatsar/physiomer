@@ -9588,6 +9588,10 @@ h1.blue-line-no-uppercase, h2.blue-line-no-uppercase, h3.blue-line-no-uppercase{
   header#header .region-header #block-menu-block-3 ul li {
     width: 100%;
     border: 0;
+    margin-bottom: 15px;
+  }
+  header#header .region-header #block-menu-block-3 ul li:last-child {
+      margin-bottom: 0px;
   }
   .node-header .submenu-left {
     width: 100%;
