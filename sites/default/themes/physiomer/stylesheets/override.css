@@ -5,6 +5,11 @@
     margin-bottom: 20px;
 }
 
+.product-btn:visited {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
 .noside-margin {
     margin-left: 0px;
     margin-right: 0px;
