@@ -6,3 +6,6 @@ sites/*/files
 sites/*/private
 
 tmp/*
+
+#ignore netbeans project files
+nbproject/*
