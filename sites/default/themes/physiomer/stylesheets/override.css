@@ -172,13 +172,15 @@ h2.blue-line.v2 {
     order: 1;
 }
 
+.product-under { text-align: center; }
+
 #discover-story { margin: 0 auto; }
 
 #discover-story p {
     font-size: 18px;
 }
 
-.identity-text {
+.identity-text, .text-up {
     order: 2;
 }
 
