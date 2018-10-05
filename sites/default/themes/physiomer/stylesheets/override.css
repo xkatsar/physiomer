@@ -353,11 +353,18 @@ h2.blue-line.v2 {
     #histoire-mobile { display: block; }
     footer#footer #block-block-10 { background: none; }
     #sup-footer { padding-bottom: 20px;}
-    .front #main { margin-top: 0px; }
+    .front #main { margin-top: 50px; }
     .node-header-group, .node-header .node-header-group { margin-top: 0px; }
     .gamme .node-header .node-header-group h1,
     .category .node-header .node-header-group h1 { margin-top: 20px;}
     .page-node-tnid-36 .field-name-body { display: none; }
+    
+    .front #main .gradientbox h2 a {
+        display: block;
+        margin-bottom: 20px;
+    }
+    
+    .front #main .gradientbox .subtitle { margin-bottom: 20px; }
     
     .node-header .content-right {
         padding: 0px 15px;
