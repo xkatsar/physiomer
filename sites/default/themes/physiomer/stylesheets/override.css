@@ -173,7 +173,7 @@ h2.blue-line.v2 {
     flex-direction: row-reverse;
 }
 
-.discover-story-container, .product-under {
+.product-under {
     order: 1;
 }
 
@@ -185,8 +185,12 @@ h2.blue-line.v2 {
     font-size: 18px;
 }
 
-.identity-text, .text-up {
+.text-up {
     order: 2;
+}
+
+.discover-story-container {
+    display: block;
 }
 
 .btn-physiomer {
@@ -289,9 +293,9 @@ h2.blue-line.v2 {
     line-height: 34px;
     color: #fff; 
 }
-
-
 /**/
+
+#histoire-mobile { display: none; }
 
 .zoom-baby {
     background:url('/sites/default/files/back-emphase-baby.png') top left no-repeat;
@@ -345,8 +349,15 @@ h2.blue-line.v2 {
 
 @media only screen and (max-width: 767px) {
     
+    footer#footer #block-menu-block-4, #histoire-frise, #histoire-content { display: none; }
+    #histoire-mobile { display: block; }
+    footer#footer #block-block-10 { background: none; }
+    #sup-footer { padding-bottom: 20px;}
+    .front #main { margin-top: 0px; }
     .node-header-group, .node-header .node-header-group { margin-top: 0px; }
-    .gamme .node-header .node-header-group h1 { margin-top: 20px;}
+    .gamme .node-header .node-header-group h1,
+    .category .node-header .node-header-group h1 { margin-top: 20px;}
+    .page-node-tnid-36 .field-name-body { display: none; }
     
     .node-header .content-right {
         padding: 0px 15px;
@@ -399,6 +410,8 @@ h2.blue-line.v2 {
     .node-header .submenu-left {
         padding-top: 10px;
     }
+    
+    .node-header .submenu-left.erase { display: none; }
     
     .readmore-container .btn-physiomer, .readmore-full-container .btn-physiomer{
         width: 100%;
@@ -458,7 +471,9 @@ h2.blue-line.v2 {
         margin: 0 0 0 5%;
     }
     
-    
+    .discover-story-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 576px) {
