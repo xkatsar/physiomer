@@ -481,6 +481,8 @@ h2.blue-line.v2 {
     .discover-story-container {
         display: none;
     }
+    
+    #block-block-3 { display: none; }
 }
 
 @media only screen and (max-width: 576px) {
