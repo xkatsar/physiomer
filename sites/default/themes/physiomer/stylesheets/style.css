@@ -5426,7 +5426,8 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 10px 1000px white inset !important;
 }
 body {
-  background: #ffffff url('../img/footer.jpg') bottom center no-repeat;
+  /*background: #ffffff url('../img/footer.jpg') bottom center no-repeat;*/
+  background: #ffffff url('../img/footer.webp') bottom center no-repeat;
   height: 100%;
   font-size: 13px;
   padding-bottom: 200px;
@@ -5459,8 +5460,9 @@ header#header .region-header .top-menu-website {
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 25px;
-  padding-right: ;
-  background: #009fe3 url('../img/topmenuback.jpg') top left repeat-x;
+  /*padding-right: ;*/
+  /*background: #009fe3 url('../img/topmenuback.jpg') top left repeat-x;*/
+  background: #009fe3 url('../img/topmenuback.webp') top left repeat-x;
   -webkit-border-radius: 0 0 5px 5px;
   -moz-border-radius: 0 0 5px 5px;
   border-radius: 0 0 5px 5px;
