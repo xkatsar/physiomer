@@ -1,4 +1,4 @@
-γ /*!
+ /*!
  * Bootstrap v2.3.1
  *
  * Copyright 2012 Twitter, Inc
@@ -5426,8 +5426,7 @@ input:-webkit-autofill {
   -webkit-box-shadow: 0 0 10px 1000px white inset !important;
 }
 body {
-  /*background: #ffffff url('../img/footer.jpg') bottom center no-repeat;*/
-  background: #ffffff url('../img/footer.webp') bottom center no-repeat;
+  background: #ffffff url('../img/footer-min.jpg') bottom center no-repeat;
   height: 100%;
   font-size: 13px;
   padding-bottom: 200px;
@@ -6598,7 +6597,7 @@ footer#footer #block-block-10 .center-container #block-block-8 a {
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff6a5b9', endColorstr='#fff27695', GradientType=0);
 }
 .page-node-tnid-4 #subcontainer #block-views-gamme-block-products .products-gamme-list-title {
-  background: url('../img/baby-product-list-title-background.png') bottom left no-repeat;
+  background: url('../img/baby-product-list-title-background-min.png') bottom left no-repeat;
 }
 .page-node-tnid-4 #subcontainer #block-views-gamme-block-products .view-content .product-btn {
   background: #f27695;
@@ -7196,7 +7195,7 @@ footer#footer #block-block-10 .center-container #block-block-8 a {
 }
 .page-node-tnid-35 #products-complete-list .view-grouping-header h2 i.rubrique-icon,
 .page-node-tnid-110 #products-complete-list .view-grouping-header h2 i.rubrique-icon {
-  background: url('../img/icons-product-list.jpg') top left no-repeat;
+  background: url('../img/icons-product-list-min.jpg') top left no-repeat;
   height: 48px;
   width: 77px;
   display: inline-block;
@@ -8305,7 +8304,7 @@ h4 {
 hr.header-shadow {
   height: 8px;
   border: none;
-  background: url('../img/node-header-shadow.png');
+  background: url('../img/node-header-shadow-min.png');
   margin: 0;
   padding: 0;
   margin-bottom: 30px;
@@ -8496,7 +8495,7 @@ h3.blue-line {
 }
 .rounded-title,
 .icon-title {
-  background: url('../img/rounded-title-background.png') top right no-repeat;
+  background: url('../img/rounded-title-background-min.png') top right no-repeat;
   height: 71px;
   *display: inline;
   display: inline-block;
@@ -8511,7 +8510,7 @@ h3.blue-line {
 }
 .rounded-title:before,
 .icon-title:before {
-  background: url('../img/rounded-title-background-before.png') top left no-repeat;
+  background: url('../img/rounded-title-background-before-min.png') top left no-repeat;
   width: 16px;
   height: 90px;
   display: inline-block;
@@ -8558,7 +8557,7 @@ h3.blue-line {
   margin-top: 50px;
 }
 .node-header {
-  background: url('../img/background-header-node-neutre.jpg') bottom left no-repeat;
+  background: url('../img/background-header-node-neutre-min.jpg') bottom left no-repeat;
   position: relative;
 }
 .node-header .node-header-group {
@@ -8608,7 +8607,7 @@ h3.blue-line {
   padding: 0 25px 25px 25px;
 }
 .node-header .content-right {
-  background: url('../img/vertical-separation-node-header-neutre.png') bottom left no-repeat;
+  background: url('../img/vertical-separation-node-header-neutre-min.png') bottom left no-repeat;
   padding: 45px;
   width: 700px;
   margin-left: 0;
@@ -8630,7 +8629,7 @@ h3.blue-line {
   padding-right: 10px;
   padding-left: 25px;
   padding-bottom: 10px;
-  background: url('../img/background-header-node-neutre.jpg') bottom left no-repeat;
+  background: url('../img/background-header-node-neutre-min.jpg') bottom left no-repeat;
 }
 .node-header .background-full {
   background-position: top right;
@@ -8723,11 +8722,11 @@ h3.blue-line {
   padding-left: 80px;
   padding-top: 30px;
   padding-bottom: 6px;
-  background: url('../img/rounded-title-background-big.png') bottom right no-repeat;
+  background: url('../img/rounded-title-background-big-min.png') bottom right no-repeat;
   height: 79px;
 }
 .icon-title:before {
-  background: url('../img/icons-rounded-title-background-before-sprite.png') top left no-repeat;
+  background: url('../img/icons-rounded-title-background-before-sprite-min.png') top left no-repeat;
   width: 68px;
 }
 .icon-title.icon-star:before {
@@ -8761,14 +8760,14 @@ h3.blue-line {
 }
 .post-it .postit-header,
 .node-content .post-it .postit-header {
-  background: url('../img/postit-top.png') top left no-repeat;
+  background: url('../img/postit-top-min.png') top left no-repeat;
   height: 42px;
   margin: 0;
 }
 .post-it .post-it-content,
 .node-content .post-it .post-it-content {
   margin: 0;
-  background: url('../img/postit-center.png') bottom left no-repeat;
+  background: url('../img/postit-center-min.png') bottom left no-repeat;
   min-height: 230px;
   padding: 0 30px 30px 30px;
   *zoom: 1;
@@ -8957,7 +8956,7 @@ h3.blue-line {
   max-width: 980px;
 }
 #discover-story {
-  background: transparent url('../img/discover-background.png') top center no-repeat;
+  background: transparent url('../img/discover-background-min.png') top center no-repeat;
   text-align: center;
   width: 150px;
   padding-top: 10px;
