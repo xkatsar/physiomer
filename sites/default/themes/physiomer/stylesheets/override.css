@@ -349,7 +349,7 @@ h2.blue-line.v2 {
 
 @media only screen and (max-width: 767px) {
     
-    footer#footer #block-menu-block-4, #histoire-frise, #histoire-content { display: none; }
+    #histoire-frise, #histoire-content { display: none; }
     #histoire-mobile { display: block; }
     footer#footer #block-block-10 { background: none; }
     #sup-footer { padding-bottom: 20px;}
@@ -482,7 +482,7 @@ h2.blue-line.v2 {
         display: none;
     }
     
-    #block-block-3 { display: none; }
+    /*#block-block-3 { display: none; }*/
 }
 
 @media only screen and (max-width: 576px) {
