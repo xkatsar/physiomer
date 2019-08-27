@@ -30,7 +30,7 @@
 ?>
 
 <div class="row-inline <?php print $zebra ?>" id="node-gamme-content-id-<?php print $node->nid; ?>">
-    <h2 class="blue-line"><?php print $title; ?></h2>
+    <h2 class="blue-line"><a href="/<?php print drupal_get_path_alias("node/$node->nid");?>"><?php print $title; ?></a></h2>
     <?php print render($title_suffix); ?>
     <div class="row content-row">
         <?php if (isset($content['field_image_teaser']) && $content['field_image_teaser'] ): ?>
